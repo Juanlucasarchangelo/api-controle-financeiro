@@ -1,0 +1,6 @@
+@FinanceiroAPI_HostAddress = http://localhost:5069
+
+GET {{FinanceiroAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
