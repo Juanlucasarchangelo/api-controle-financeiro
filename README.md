@@ -1,6 +1,6 @@
 <div align="center">
   <img src="https://media.giphy.com/media/Ll22OhMLAlVDb8UQWe/giphy.gif" width="120"/>
-    <h1>🛠 Teste Prático: Sistema de Controle Financeiro Empresarial</h1>
+    <h1>🛠 Sistema de Controle Financeiro Empresarial</h1>
   <p>Sistema desenvolvido para controlar receitas e despesas de uma pequena empresa, com categorização de transações e relatórios básicos.</p>
 
   <a href="https://www.youtube.com/@ArchaniaSolum" target="_blank" rel="noopener noreferrer">
