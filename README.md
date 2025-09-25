@@ -1,6 +1,7 @@
 <div align="center">
   <img src="https://media.giphy.com/media/Ll22OhMLAlVDb8UQWe/giphy.gif" width="120"/>
-  <h1>Sistema desenvolvido para controlar receitas e despesas de uma pequena empresa, com categorização de transações e relatórios básicos.</p>
+    <h1>🛠 Teste Prático: Sistema de Controle Financeiro Empresarial</h1>
+  <p>Sistema desenvolvido para controlar receitas e despesas de uma pequena empresa, com categorização de transações e relatórios básicos.</p>
 
   <a href="https://www.youtube.com/@ArchaniaSolum" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/static/v1?message=Youtube&logo=youtube&label=&color=FF0000&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="youtube logo"/>
@@ -19,7 +20,6 @@
 ---
 
 ## ✨ Demonstração
-
 
 <p>Em breve... </p>
 <!-- <img src="https://user-images.githubusercontent.com/xxx/preview.gif" width="100%" alt="preview do projeto"/> -->
@@ -54,3 +54,4 @@ npm install
 # Configure o .env
 cp .env.example .env
 php artisan key:generate
+```
