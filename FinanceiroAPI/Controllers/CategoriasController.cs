@@ -6,17 +6,17 @@ using Microsoft.EntityFrameworkCore;
 namespace FinanceiroAPI.Controllers;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("api/")]
 public class CategoriasController : ControllerBase
 {
     private readonly AppDbContext _context;
     public CategoriasController(AppDbContext context) => _context = context;
 
-    [HttpGet]
+    [HttpGet("listar-categorias")]
     public async Task<ActionResult<IEnumerable<Categoria>>> Get() =>
         await _context.Categorias.ToListAsync();
 
-    [HttpPost]
+    [HttpPost("cadastrar-categorias")]
     public async Task<ActionResult<Categoria>> Post(Categoria categoria)
     {
         _context.Categorias.Add(categoria);

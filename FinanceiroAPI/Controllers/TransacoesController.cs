@@ -6,14 +6,13 @@ using FinanceiroAPI.Models;
 namespace FinanceiroAPI.Controllers;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("api/")]
 public class TransacoesController : ControllerBase
 {
     private readonly AppDbContext _context;
     public TransacoesController(AppDbContext context) => _context = context;
 
-    // GET com filtros
-    [HttpGet]
+    [HttpGet("listar-transacoes")]
     public async Task<ActionResult<IEnumerable<Transacao>>> Get(
         DateTime? inicio, DateTime? fim, int? categoriaId, string? tipo)
     {
@@ -27,7 +26,7 @@ public class TransacoesController : ControllerBase
         return await query.ToListAsync();
     }
 
-    [HttpGet("{id}")]
+    [HttpGet("listar-transacoes/{id}")]
     public async Task<ActionResult<Transacao>> GetById(int id)
     {
         var transacao = await _context.Transacoes.Include(t => t.Categoria)
@@ -35,7 +34,7 @@ public class TransacoesController : ControllerBase
         return transacao == null ? NotFound() : transacao;
     }
 
-    [HttpPost]
+    [HttpPost("cadastrar-transacoes")]
     public async Task<ActionResult<Transacao>> Post(Transacao transacao)
     {
         if (transacao.Valor <= 0) return BadRequest("Valor deve ser maior que zero.");
@@ -51,7 +50,7 @@ public class TransacoesController : ControllerBase
         return CreatedAtAction(nameof(GetById), new { id = transacao.Id }, transacao);
     }
 
-    [HttpPut("{id}")]
+    [HttpPut("editar-transacoes/{id}")]
     public async Task<IActionResult> Put(int id, Transacao transacao)
     {
         if (id != transacao.Id) return BadRequest();
@@ -60,7 +59,7 @@ public class TransacoesController : ControllerBase
         return NoContent();
     }
 
-    [HttpDelete("{id}")]
+    [HttpDelete("deletar-transacoes/{id}")]
     public async Task<IActionResult> Delete(int id)
     {
         var transacao = await _context.Transacoes.FindAsync(id);

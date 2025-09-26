@@ -5,13 +5,13 @@ using FinanceiroAPI.Data;
 namespace FinanceiroAPI.Controllers;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("api/")]
 public class RelatoriosController : ControllerBase
 {
     private readonly AppDbContext _context;
     public RelatoriosController(AppDbContext context) => _context = context;
 
-    [HttpGet("resumo")]
+    [HttpGet("listar-resumo")]
     public async Task<IActionResult> Resumo(DateTime inicio, DateTime fim)
     {
         var transacoes = await _context.Transacoes
@@ -25,7 +25,7 @@ public class RelatoriosController : ControllerBase
         return Ok(new { Saldo = receitas - despesas, Receitas = receitas, Despesas = despesas });
     }
 
-    [HttpGet("por-categoria")]
+    [HttpGet("listar-por-categoria")]
     public async Task<IActionResult> PorCategoria(DateTime inicio, DateTime fim)
     {
         var resultado = await _context.Transacoes
