@@ -156,11 +156,6 @@ C:\Users\juan.archangelo\Documents\Projetos\web-controle-financeiro\FinanceiroAP
 C:\Users\juan.archangelo\Documents\Projetos\web-controle-financeiro\FinanceiroAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\juan.archangelo\Documents\Projetos\web-controle-financeiro\FinanceiroAPI\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\juan.archangelo\Documents\Projetos\web-controle-financeiro\FinanceiroAPI\obj\Debug\net8.0\staticwebassets.development.json
-C:\Users\juan.archangelo\Documents\Projetos\web-controle-financeiro\FinanceiroAPI\obj\Debug\net8.0\staticwebassets\msbuild.FinanceiroAPI.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\juan.archangelo\Documents\Projetos\web-controle-financeiro\FinanceiroAPI\obj\Debug\net8.0\staticwebassets\msbuild.build.FinanceiroAPI.props
-C:\Users\juan.archangelo\Documents\Projetos\web-controle-financeiro\FinanceiroAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.FinanceiroAPI.props
-C:\Users\juan.archangelo\Documents\Projetos\web-controle-financeiro\FinanceiroAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.FinanceiroAPI.props
-C:\Users\juan.archangelo\Documents\Projetos\web-controle-financeiro\FinanceiroAPI\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\juan.archangelo\Documents\Projetos\web-controle-financeiro\FinanceiroAPI\obj\Debug\net8.0\scopedcss\bundle\FinanceiroAPI.styles.css
 C:\Users\juan.archangelo\Documents\Projetos\web-controle-financeiro\FinanceiroAPI\obj\Debug\net8.0\Financei.0FB4D0D3.Up2Date
 C:\Users\juan.archangelo\Documents\Projetos\web-controle-financeiro\FinanceiroAPI\obj\Debug\net8.0\FinanceiroAPI.dll
@@ -170,3 +165,11 @@ C:\Users\juan.archangelo\Documents\Projetos\web-controle-financeiro\FinanceiroAP
 C:\Users\juan.archangelo\Documents\Projetos\web-controle-financeiro\FinanceiroAPI\obj\Debug\net8.0\ref\FinanceiroAPI.dll
 C:\Users\juan.archangelo\Documents\Projetos\web-controle-financeiro\FinanceiroAPI\bin\Debug\net8.0\MySqlConnector.dll
 C:\Users\juan.archangelo\Documents\Projetos\web-controle-financeiro\FinanceiroAPI\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\juan.archangelo\Documents\Projetos\web-controle-financeiro\FinanceiroAPI\bin\Debug\net8.0\FinanceiroAPI.staticwebassets.endpoints.json
+C:\Users\juan.archangelo\Documents\Projetos\web-controle-financeiro\FinanceiroAPI\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\juan.archangelo\Documents\Projetos\web-controle-financeiro\FinanceiroAPI\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\juan.archangelo\Documents\Projetos\web-controle-financeiro\FinanceiroAPI\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\juan.archangelo\Documents\Projetos\web-controle-financeiro\FinanceiroAPI\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\juan.archangelo\Documents\Projetos\web-controle-financeiro\FinanceiroAPI\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\juan.archangelo\Documents\Projetos\web-controle-financeiro\FinanceiroAPI\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\juan.archangelo\Documents\Projetos\web-controle-financeiro\FinanceiroAPI\obj\Debug\net8.0\swae.build.ex.cache
