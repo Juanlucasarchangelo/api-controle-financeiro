@@ -51,13 +51,22 @@ public class TransacoesController : ControllerBase
     }
 
     [HttpPut("editar-transacoes/{id}")]
-    public async Task<IActionResult> Put(int id, Transacao transacao)
+    public async Task<IActionResult> Put(int id, [FromBody] Transacao transacao)
     {
         if (id != transacao.Id) return BadRequest();
-        _context.Entry(transacao).State = EntityState.Modified;
+
+        var existingTransacao = await _context.Transacoes.FindAsync(id);
+        if (existingTransacao == null) return NotFound();
+
+        existingTransacao.Descricao = transacao.Descricao;
+        existingTransacao.Valor = transacao.Valor;
+        existingTransacao.Observacoes = transacao.Observacoes;
+
         await _context.SaveChangesAsync();
+
         return NoContent();
     }
+
 
     [HttpDelete("deletar-transacoes/{id}")]
     public async Task<IActionResult> Delete(int id)
