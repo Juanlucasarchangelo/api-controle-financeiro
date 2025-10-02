@@ -68,13 +68,16 @@ Antes de rodar o projeto, você precisa ter instalado:
    }
    ```
 
-4. Rode as migrations (se estiver usando EF Core):
+4. Importação do banco de dados já populado:  
+   Na raiz do projeto existe uma pasta chamada **@BD**, que contém um arquivo `.sql` com dados para testes.  
+
+5. Rode as migrations (se estiver usando EF Core):
 
    ```bash
    dotnet ef database update
    ```
 
-5. Inicie a API:
+6. Inicie a API:
    ```bash
    dotnet run
    ```
