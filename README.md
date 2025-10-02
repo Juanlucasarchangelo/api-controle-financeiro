@@ -21,7 +21,7 @@
 
 ## ✨ Demonstração
 
-<img src="https://archania.com.br/wp-content/uploads/2025/10/painel-financeiro.png" width="100%" alt="preview do projeto"/>
+<img src="https://archania.com.br/wp-content/uploads/2025/10/swagger.png" width="100%" alt="preview do projeto"/>
 
 ---
 
@@ -50,8 +50,8 @@ Antes de rodar o projeto, você precisa ter instalado:
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seu-repo/controle-financeiro.git
-   cd controle-financeiro
+   git clone https://github.com/Juanlucasarchangelo/api-controle-financeiro.git
+   cd api-controle-financeiro
    ```
 
 2. Restaure os pacotes:
