@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://media.giphy.com/media/Ll22OhMLAlVDb8UQWe/giphy.gif" width="120"/>
+  <img src="https://archania.com.br/wp-content/uploads/2024/10/archania-solum-favicon-branco.png" width="120"/>
     <h1>🛠 Sistema de Controle Financeiro Empresarial</h1>
   <p>Sistema desenvolvido para controlar receitas e despesas de uma pequena empresa, com categorização de transações e relatórios básicos.</p>
 
@@ -21,8 +21,7 @@
 
 ## ✨ Demonstração
 
-<p>Em breve... </p>
-<!-- <img src="https://user-images.githubusercontent.com/xxx/preview.gif" width="100%" alt="preview do projeto"/> -->
+<img src="https://archania.com.br/wp-content/uploads/2025/10/painel-financeiro.png" width="100%" alt="preview do projeto"/>
 
 ---
 
@@ -30,28 +29,115 @@
 
 <div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg" height="30" alt=".NET logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="30" alt="html5 logo" />
-  <img width="12" />
+<img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" height="30" alt="csharp logo" />
 </div>
 
 ---
 
-## 📦 Instalação
+## ⚙️ Pré-requisitos
 
-```bash
-# Clone o repositório
-git clone https://github.com/seuusuario/nome-do-projeto.git
+Antes de rodar o projeto, você precisa ter instalado:
 
-# Acesse o diretório
-cd nome-do-projeto
+- [.NET 8 SDK](https://dotnet.microsoft.com/download)
+- [MySQL Server](https://dev.mysql.com/downloads/mysql/) (ou MariaDB)
+- [Visual Studio Code](https://code.visualstudio.com/) ou [Visual Studio](https://visualstudio.microsoft.com/) (opcional)
 
-# Instale as dependências (exemplo Laravel)
-composer install
-npm install
+---
 
-# Configure o .env
-cp .env.example .env
-php artisan key:generate
+## 🚀 Como rodar o projeto
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/seu-repo/controle-financeiro.git
+   cd controle-financeiro
+   ```
+
+2. Restaure os pacotes:
+
+   ```bash
+   dotnet restore
+   ```
+
+3. Configure a string de conexão no arquivo `appsettings.json`:
+
+   ```json
+   "ConnectionStrings": {
+     "DefaultConnection": "Server=localhost;Database=ControleFinanceiro;Trusted_Connection=True;TrustServerCertificate=True;"
+   }
+   ```
+
+4. Rode as migrations (se estiver usando EF Core):
+
+   ```bash
+   dotnet ef database update
+   ```
+
+5. Inicie a API:
+   ```bash
+   dotnet run
+   ```
+
+A API rodará em:
+
 ```
+http://localhost:5069
+```
+
+---
+
+## 📂 Endpoints disponíveis
+
+### 🔹 Listar transações
+
+```
+GET /api/listar-transacoes
+```
+
+### 🔹 Resumo financeiro
+
+```
+GET /api/listar-resumo
+```
+
+### 🔹 Editar transação
+
+```
+PUT /api/transacoes/editar-transacoes/{id}
+```
+
+**Body esperado (JSON):**
+
+```json
+{
+  "id": 2,
+  "descricao": "AWS",
+  "valor": 12342,
+  "data": "2025-09-28T13:32:41.220Z",
+  "categoriaId": 3,
+  "observacoes": "Teste",
+  "dataCriacao": "2025-09-28T13:32:41.220Z",
+  "categoria": {
+    "id": 0,
+    "nome": "string",
+    "tipo": "string",
+    "ativo": true
+  }
+}
+```
+
+### 🔹 Excluir transação
+
+```
+DELETE /api/deletar-transacoes/{id}
+```
+
+---
+
+## ✅ Tecnologias utilizadas
+
+- .NET 8 (C#)
+- Entity Framework Core
+- SQL Server (padrão, mas pode ser adaptado)
+- Swagger (opcional para testes)
